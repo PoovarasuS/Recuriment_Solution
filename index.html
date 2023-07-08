@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recruitment Solution</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Recruitment Solution</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Search Candidates</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to the Recruitment Solution</h2>
+      <p>Efficiently find the best candidates for your company with our online recruitment solution.</p>
+      <p>Benefits:</p>
+      <ul>
+        <li>Streamlined hiring process</li>
+        <li>Efficient collaboration between hiring managers and HR professionals</li>
+        <li>Advanced search options for finding the perfect candidates</li>
+        <li>Improved candidate evaluation and ranking</li>
+      </ul>
+      <a href="#">Get Started</a>
+    </section>
+
+    <section id="login">
+      <h2>Login</h2>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <input type="submit" value="Login">
+      </form>
+    </section>
+
+    <section id="register">
+      <h2>Register</h2>
+      <form>
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" required>
+        <label for="contact">Contact Person:</label>
+        <input type="text" id="contact" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <input type="submit" value="Register">
+      </form>
+    </section>
+
+    <section id="search">
+      <h2>Search Candidates</h2>
+      <input type="text" id="searchBar" placeholder="Enter keywords, location, or job roles">
+      <label for="location">Location:</label>
+      <select id="location">
+        <option value="">All</option>
+        <option value="new-york">Salem</option>
+        <option value="london">Coimbatore</option>
+        <option value="tokyo">Chennai</option>
+      </select>
+      <label for="role">Job Role:</label>
+      <select id="role">
+        <option value="">All</option>
+        <option value="developer">Developer</option>
+        <option value="designer">Designer</option>
+        <option value="manager">Manager</option>
+      </select>
+      <button onclick="searchCandidates()">Search</button>
+      
+      <div id="candidateList">
+        <!-- Fetched candidates will be dynamically added here -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
